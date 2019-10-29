@@ -47,8 +47,8 @@ public class CadastroActivity extends AppCompatActivity {
                         if (!textoSenha.isEmpty()){
                             usuario = new Usuario();
                             usuario.setNome(textoNome);
-                            usuario.setEmail(textoNome);
-                            usuario.setSenha(textoNome);
+                            usuario.setEmail(textoEmail);
+                            usuario.setSenha(textoSenha);
                             cadastrarUsuario();
 
                         }else{
@@ -57,7 +57,7 @@ public class CadastroActivity extends AppCompatActivity {
                         }
                     }else{
                         Toast.makeText(CadastroActivity.this,
-                                "Preencha o e-mail!!", Toast.LENGTH_SHORT).show();
+                                "Preencha o e-mail!", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     Toast.makeText(CadastroActivity.this,
