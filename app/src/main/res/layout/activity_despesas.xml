@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ReceitasActivity">
+    tools:context=".activity.DespesasActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -46,13 +46,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.16000003"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:helperTextEnabled="true"
+        app:helperText="Ex: 19/10/29"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
         app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex: 19/10/29" />
+            android:hint="Data" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -63,6 +71,13 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:helperTextEnabled="true"
+        app:helperText="Ex: R$00.00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,9 +86,10 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex: salário mensal" />
+            android:hint="Salário Mensal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -84,6 +100,13 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:helperTextEnabled="true"
+        app:helperText="Ex: R$00.00"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -92,13 +115,15 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex: salário" />
+            android:padding="14dp"
+            android:hint="Salário"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fabSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
@@ -107,6 +132,7 @@
         android:layout_marginRight="179dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
+        android:onClick="salvarDespesa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
