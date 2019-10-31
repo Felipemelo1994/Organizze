@@ -82,7 +82,12 @@ public class PrincipalActivity extends AppCompatActivity {
                 String resultadoFormatado = decimalFormat.format(resumoUsuario);
 
                 textoSaudacao.setText("Olá, " + usuario.getNome());
-                textoSaldo.setText(resultadoFormatado);
+                textoSaldo.setText("R$ " + resultadoFormatado);
+
+                if (resumoUsuario < 0){
+                    textoSaldo.setTextColor(getResources().getColor(R.color.colorAccent));
+                }else
+                    textoSaldo.setTextColor(getResources().getColor(R.color.white));
             }
 
             @Override
