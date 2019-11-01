@@ -70,7 +70,8 @@
             android:id="@+id/editData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Data" />
+            android:hint="Data"
+            android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -99,7 +100,8 @@
             android:id="@+id/editDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Salário Mensal" />
+            android:hint="Salário Mensal"
+            android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -129,7 +131,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="14dp"
-            android:hint="Salário"/>
+            android:hint="Salário"
+            android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

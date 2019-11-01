@@ -69,7 +69,10 @@
             android:id="@+id/editData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex: 19/10/29" />
+            android:hint="Ex: 19/10/29"
+            android:drawableLeft="@drawable/ic_date_range_24dp"
+            android:drawablePadding="10dp"
+            android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -126,6 +129,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Salário"
+            android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
+            android:drawablePadding="10dp"
             android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
