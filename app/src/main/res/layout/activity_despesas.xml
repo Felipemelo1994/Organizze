@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Valor da Despesa"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:gravity="end" />
@@ -36,10 +36,10 @@
             android:ems="10"
             android:hint=" R$ 00.00"
             android:inputType="textPersonName|numberDecimal"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="30sp"
-            android:gravity="end" />
+            android:gravity="center" />
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -71,6 +71,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Data"
+            android:drawableLeft="@drawable/ic_date_range_24dp"
+            android:drawablePadding="10dp"
             android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -101,6 +103,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Salário Mensal"
+            android:drawableLeft="@drawable/ic_description_black_24dp"
+            android:drawablePadding="10dp"
             android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -132,6 +136,8 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:hint="Salário"
+            android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
+            android:drawablePadding="10dp"
             android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 

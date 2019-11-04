@@ -101,6 +101,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Salário Mensal"
+            android:drawableLeft="@drawable/ic_description_black_24dp"
+            android:drawablePadding="10dp"
             android:inputType="textCapSentences|textAutoComplete" />
     </com.google.android.material.textfield.TextInputLayout>
 
