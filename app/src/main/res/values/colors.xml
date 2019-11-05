@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF706A</color>
     <color name="white">#FFFFFF</color>
     <color name="colorAccentReceita">#00D39E</color>
+    <color name="colorPrimaryReceita">#49B849</color>
+    <color name="colorPrimaryDarkReceita">#51A052</color>
+    <color name="colorReceita">#49B849</color>
 </resources>

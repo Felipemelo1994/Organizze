@@ -90,7 +90,6 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
         app:helperTextEnabled="true"
-        app:helperText="Ex: R$00.00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -102,7 +101,7 @@
             android:id="@+id/editDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Salário Mensal"
+            android:hint="Descrição"
             android:drawableLeft="@drawable/ic_description_black_24dp"
             android:drawablePadding="10dp"
             android:inputType="textCapSentences|textAutoComplete" />
@@ -110,19 +109,19 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        app:boxCornerRadiusTopStart="30dp"
+        android:layout_marginBottom="16dp"
         app:boxCornerRadiusBottomEnd="30dp"
         app:boxCornerRadiusBottomStart="30dp"
         app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
         app:helperTextEnabled="true"
-        app:helperText="Ex: R$00.00"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -134,11 +133,11 @@
             android:id="@+id/editCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="14dp"
-            android:hint="Salário"
             android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
             android:drawablePadding="10dp"
-            android:inputType="textCapSentences|textAutoComplete" />
+            android:hint="Categoria"
+            android:inputType="textCapSentences|textAutoComplete"
+            android:padding="14dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -151,6 +150,7 @@
         android:layout_marginRight="179dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
+        app:rippleColor="#99FFFFFF"
         android:onClick="salvarDespesa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

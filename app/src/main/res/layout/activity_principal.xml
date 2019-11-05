@@ -41,17 +41,16 @@
         fab:menu_colorNormal="#DA4336"
         fab:menu_colorPressed="#E75043"
         fab:menu_colorRipple="#99FFFFFF"
-        fab:menu_animationDelayPerItem="100"
+        fab:menu_animationDelayPerItem="50"
         fab:menu_icon="@drawable/fab_add"
         fab:menu_buttonSpacing="0dp"
         fab:menu_labels_margin="0dp"
-        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
-        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
-        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_showAnimation="@anim/fab_scale_up"
+        fab:menu_labels_hideAnimation="@anim/fab_scale_down"
+        fab:menu_labels_paddingTop="6dp"
         fab:menu_labels_paddingRight="8dp"
-        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingBottom="6dp"
         fab:menu_labels_paddingLeft="8dp"
-        fab:menu_labels_padding="8dp"
         fab:menu_labels_textColor="#FFFFFF"
         fab:menu_labels_textSize="14sp"
         fab:menu_labels_cornerRadius="50dp"
@@ -69,26 +68,30 @@
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab"
+            app:fab_showAnimation="@anim/mi_shake"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_remover_branco_24dp"
             fab:fab_size="mini"
             android:onClick="adicionarDespesas"
+            android:src="@drawable/ic_remover_branco_24dp"
             app:fab_colorNormal="@android:color/holo_red_dark"
-            app:fab_colorPressed="@android:color/holo_red_light"
+            app:fab_colorRipple="#66FFFFFF"
             fab:fab_label="Despesa" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_adicionar_branco_24dp"
-            app:fab_colorNormal="@android:color/holo_green_dark"
-            app:fab_colorPressed="@android:color/holo_green_light"
+            android:src="@drawable/ic_adicionar_branco_24dp"
+            app:fab_colorNormal="@color/colorPrimaryReceita"
+            app:fab_colorPressed="@color/colorPrimaryDarkReceita"
+            app:fab_colorRipple="#66FFFFFF"
             fab:fab_size="mini"
             android:onClick="adicionarReceitas"
             fab:fab_label="Receita" />
 
+
     </com.github.clans.fab.FloatingActionMenu>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
