@@ -48,7 +48,6 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="R$ 0"
-
             android:textColor="@android:color/white"
             android:textSize="30sp" />
 
