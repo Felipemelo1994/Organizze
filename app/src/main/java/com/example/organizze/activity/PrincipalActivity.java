@@ -249,7 +249,10 @@ public class PrincipalActivity extends AppCompatActivity {
             case R.id.menuSair:
                 autenticacao.signOut();
                 startActivity(new Intent(this, MainActivity.class));
-                finish();
+                break;
+
+            case R.id.menuConfig:
+                startActivity(new Intent(this, Configuracao.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

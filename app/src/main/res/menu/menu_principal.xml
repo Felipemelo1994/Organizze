@@ -7,4 +7,10 @@
         android:title="Sair"
         app:showAsAction="never"
         />
+    <item
+        android:id="@+id/menuConfig"
+        android:orderInCategory="100"
+        android:title="Configurações"
+        app:showAsAction="never"
+        />
 </menu>

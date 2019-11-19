@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.organizze">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,18 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DespesasActivity"
-            android:theme="@style/despesaTheme"></activity>
-        <activity android:name=".activity.ReceitasActivity"
-            android:theme="@style/receitasTheme"/>
+        <activity
+            android:name=".activity.Configuracao"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.DespesasActivity"
+            android:theme="@style/despesaTheme" />
+        <activity
+            android:name=".activity.ReceitasActivity"
+            android:theme="@style/receitasTheme" />
         <activity
             android:name=".activity.PrincipalActivity"
             android:label="@string/title_activity_principal"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.CadastroActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CadastroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/Theme.Intro">
