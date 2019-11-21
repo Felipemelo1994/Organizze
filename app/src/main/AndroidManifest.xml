@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.Configuracao"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.organizze.activity.Configuracao"/>
         <activity
             android:name=".activity.DespesasActivity"
             android:theme="@style/despesaTheme" />

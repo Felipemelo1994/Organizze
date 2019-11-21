@@ -21,15 +21,15 @@ public class Configuracao extends AppCompatActivity {
         Toolbar toobar = findViewById(R.id.toolbarConfig);
         toobar.setTitle("Configurações");
         toobar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
-        final Intent intent = new Intent(this, MainActivity.class);
         toobar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(intent);
-                //finish();
+                finishAffinity();
             }
         });
 
         setSupportActionBar(toobar);
     }
+
+
 }
